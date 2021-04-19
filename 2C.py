@@ -40,11 +40,13 @@ for i in range(501):
 resultado = somaRiemann(0, 1, 0, 1, allX, allY, area)
 print("CANTO INFERIOR ESQUERDO: {:.4f}".format(resultado))
 
+resultado = 0
 #Ponto Médio:
 for x in range(len(allX)-1):
+    pontoMedioX = (allX[x] + allX[x+1])/2
     for y in range(len(allY)-1):
-        pontoMedio = (allX[x] + allX[x+1])/2
-        resultado += ((1 - (pontoMedio**2))**0.5)*area
+        pontoMedioY = (allY[y] + allY[y+1])/2
+        resultado += ((pontoMedioX**2) + (pontoMedioY**2))*area
 print("PONTO MEDIO: {:.4f}".format(resultado))
 
 #Canto Superior direito:
