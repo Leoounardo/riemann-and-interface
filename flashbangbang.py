@@ -28,7 +28,7 @@ datas = [
     [sg.T("Cantos Inferiores:",size=(15,1))],
     [sg.T("   Esquerdo:", key="1",size=(15,1))],
     [sg.T("   Direito:", key="2",size=(15,1))],
-    [sg.T("   Ponto Médio:", key="3",size=(15,1))],
+    [sg.T("   Ponto Médio:", key="3",size=(16,1))],
     [sg.T("Cantos Superiores:",size=(15,1))],
     [sg.T("   Esquerdo:", key="4",size=(15,1))],
     [sg.T("   Direito:", key="5",size=(15,1))]
@@ -73,7 +73,22 @@ while ok:
         
         ciE = somaRiemann(0, 1, 0, 1, allX, allY, area, eqc.index(val[0]))
         ciD = somaRiemann(1, 0, 0, 1, allX, allY, area, eqc.index(val[0]))
+        
+        #ponto medio
         pM = 0
+        if eqc.index(val[0]) == 0:
+            for x in range(len(allX)-1):
+                for y in range(len(allY)-1):
+                    pontoMedio = (allX[x] + allX[x+1])/2
+                    pM += ((1 - (pontoMedio**2))**0.5)*area
+
+        elif eqc.index(val[0]) == 1:
+            for x in range(len(allX)-1):
+                pontoMedioX = (allX[x] + allX[x+1])/2
+                for y in range(len(allY)-1):
+                    pontoMedioY = (allY[y] + allY[y+1])/2
+                    pM += ((pontoMedioX**2) + (pontoMedioY**2))*area          
+
         csE = somaRiemann(0, 1, 0, 1, allX, allY, area, eqc.index(val[0]))
         csD = somaRiemann(1, 0, 1, 0, allX, allY, area, eqc.index(val[0]))
                 
