@@ -6,14 +6,13 @@ Cada código possui como nome o exercício que o mesmo resolve. Para rodá-los, 
 
 2. Abra o terminal de seu sistema operacional e rode os seguintes comandos (eles servem para instalar as bibliotecas usadas neste trabalho, caso contrário alguns códigos podem não funcionar):
 
-..* Para instalar a biblioteca de interface gráfica (PySimpleGUI):
+* Para instalar a biblioteca de interface gráfica (PySimpleGUI):
 ```
 pip install pysimplegui
 ```
-
-..* Para instalar a biblioteca de matemática avançada e plotagem gráfica (MatPlotLib):
+* Para instalar a biblioteca de matemática avançada e plotagem gráfica (MatPlotLib):
 ```
-pip install
+pip install matplotlib
 ```
 
 Feito isso, basta se divertir com os códigos disponíveis :)
