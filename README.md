@@ -1,16 +1,12 @@
 # Soma de Riemann em Python
 
-Cada código possui como nome o exercício que o mesmo resolve. Para rodá-los, siga os seguintes passos:
+Cada código possui como nome o exercício que o mesmo resolve. A resolução do exercício 4 está disponível no código `flashbangbang.py`. Para rodá-los, siga os seguintes passos:
 
-1. Instale o Python. A versão usada na construção deste projeto está disponível [aqui](https://www.python.org/downloads/release/python-385/). Certifique-se de ter instalado o gereenciador de pacotes pip (incluso na instalação do python, basta marcar uma caixa na qual está escrito "install pip").
+1. Instale o Python. A versão usada na construção deste projeto está disponível [aqui](https://www.python.org/downloads/release/python-385/). Certifique-se de ter instalado o gereenciador de pacotes pip e a biblioteca tcl/tk (ambos inclusos na instalação padrão do Python).
 
-2. Abra o terminal de seu sistema operacional e rode os seguintes comandos (eles servem para instalar as bibliotecas usadas neste trabalho, caso contrário alguns códigos podem não funcionar):
+2. Se algum código não funcionar em sua máquina, experimente abrir o terminal de seu sistema operacional e rodar os seguintes comandos (eles servem para instalar as bibliotecas usadas neste trabalho):
 
-* Para instalar a biblioteca de interface gráfica (PySimpleGUI):
-```
-pip install pysimplegui
-```
-* Para instalar a biblioteca de matemática avançada e plotagem gráfica (MatPlotLib):
+* O código `showData.py` depende da biblioteca de matemática avançada e plotagem gráfica MatPlotLib, que também pode ser instalada através do gerenciador de pacotes:
 ```
 pip install matplotlib
 ```
